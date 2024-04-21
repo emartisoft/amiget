@@ -10,9 +10,9 @@ Enter the following command to list the packages published on Aminet.net in the 
 amiget -L
 ```
 
-This command creates a table with columns ID, Name, Path, Size, Date and Description. At the end of the list, it waits for you to enter for selection. 
+This command creates a table with columns `ID`, `Name`, `Path`, `Size`, `Date` and `Description`. At the end of the list, it waits for you to enter for selection. 
 
-If it consists of multiple pages, you can navigate between pages with Next, Prev and Go to Page. Identify and enter the ID of the package you want to process. The selected package is available for download. If this package is a compressed file (lha, zip, gz, tar.gz) it can be extracted after download. Or it can be mounted if it is an ADF image (this feature is only available for OS3.2). Or you may just want to view the readme file of the package. You can also skip these operations and return to the list.
+If it consists of multiple pages, you can navigate between pages with `Next`, `Prev` and `Go to Page`. Identify and enter the ID of the package you want to process. The selected package is available for download (`Download`). If this package is a compressed file (lha, zip, gz, tar.gz) it can be extracted after download (`Download & Extract`). Or it can be mounted if it is an ADF image (this feature is only available for OS3.2)(`Download & Mount`). Or you may just want to view the readme file of the package (`Readme`). You can also skip these operations and return to the list (`Return List`).
 
 Exit the application after downloading or viewing the readme file. At this point, enter the following command to return to the list:
 
@@ -24,7 +24,7 @@ Let's say you only viewed the readme file but then you want to download it. Then
 ```bash
 amiget -D
 ```
-You can use this command to download the same package again. You can also use it to resume the download if you interrupted it with CTRL-C.
+You can use this command to download the same package again. You can also use it to resume the download if you interrupted it with `CTRL-C`.
 
 Or you downloaded the package but want to view the readme file:
 ```bash
@@ -34,7 +34,7 @@ The package you are looking for may not have been published in the last 30 days.
 ```bash
 amiget -s demo party 92
 ```
-You can also download the package you want to download without searching. For example, to download the package /util/misc/AmigaGPT.lha and save it in the RAM:Downloads/AI drawer:
+You can also download the package you want to download without searching. For example, to download the package `/util/misc/AmigaGPT.lha` and save it in the `RAM:Downloads/AI` drawer:
 ```bash
 amiget -d AmigetGPT.lha util/misc RAM:Downloads/AI
 ```
