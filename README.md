@@ -24,13 +24,13 @@ Let's say you only viewed the readme file but then you want to download it. Then
 ```bash
 amiget -D
 ```
-You can use this command to download the same package again. You can also use it to resume the download if you interrupted it with `CTRL-C`.
+You can also use this command to download the same package again. You can also use it to resume the download if you interrupted it with `CTRL-C`.
 
 Or you downloaded the package but want to view the readme file:
 ```bash
 amiget -R
 ```
-The package you are looking for may not have been published in the last 30 days. What to do? To search for demo packs for parties from 1992, enter this:
+The package you are looking for may not have been published in the last 30 days. What to do? For example: To search for demo packs for parties from 1992, enter this:
 ```bash
 amiget -s demo party 92
 ```
@@ -46,7 +46,7 @@ It does not ask for confirmation to download, notifies you with a sound effect a
 
 If you want to view the readme file:
 ```bash
-amiget -r AmigetGPT.lha util/misc RAM:Downloads/AI
+amiget -r AmigetGPT.lha util/misc
 ```
 for suboption details:
 ```bash
