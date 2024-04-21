@@ -1,6 +1,12 @@
 # amiget
 A console application to search for and download packages from aminet on AmigaOS 3.X
 
+This application was coded on a real Amiga using `Amiga-E` and `C` language.
+
+This application requires internet connection (bsdsocket.library). 
+
+**Although it is not certain, the application may not work properly on Amiga emulators.**
+
 # How to use
 Let me try to explain how to use it by giving an example. 
 
