@@ -1,5 +1,5 @@
 # amiget
-A console application to search for and download packages from aminet for AmigaOS 3.X
+A console application to search for and download packages from aminet on AmigaOS 3.X
 
 # How to use
 Let me try to explain how to use it by giving an example. 
