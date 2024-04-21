@@ -14,7 +14,7 @@ This command creates a table with columns `ID`, `Name`, `Path`, `Size`, `Date` a
 
 If it consists of multiple pages, you can navigate between pages with `Next`, `Prev` and `Go to Page`. Identify and enter the ID of the package you want to process. The selected package is available for download (`Download`). If this package is a compressed file (lha, zip, gz, tar.gz) it can be extracted after download (`Download & Extract`). Or it can be mounted if it is an ADF image (this feature is only available for OS3.2)(`Download & Mount`). Or you may just want to view the readme file of the package (`Readme`). You can also skip these operations and return to the list (`Return List`).
 
-Exit the application after downloading or viewing the readme file. At this point, enter the following command to return to the list:
+Exits the application after downloaded package or displayed the readme file. At this point, enter the following command to return to the list:
 
 ```bash
 amiget -S
