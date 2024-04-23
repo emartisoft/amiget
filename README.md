@@ -16,7 +16,7 @@ Enter the following command to list the packages published on Aminet.net in the 
 amiget -L
 ```
 
-This command creates a table with columns `ID`, `Name`, `Path`, `Size`, `Date` and `Description`. At the end of the list, it waits for you to enter for selection. 
+This command creates a table with columns `ID`, `Name`, `Path`, `Size`, `Date` and `Description`.
 
 If it consists of multiple pages, you can navigate between pages with `Next`, `Prev` and `Go to Page`. Identify and enter the ID of the package you want to process. The selected package is available for download (`Download`). If this package is a compressed file (lha, zip, gz, tar.gz) it can be extracted after download (`Download & Extract`). Or it can be mounted if it is an ADF image (this feature is only available for OS3.2)(`Download & Mount`). Or you may just want to view the readme file of the package (`Readme`). You can also skip these operations and return to the list (`Return List`).
 
