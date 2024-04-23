@@ -64,7 +64,7 @@ You can also download the package you want to download without searching. For ex
 ```bash
 amiget -d AmigetGPT.lha util/misc RAM:Downloads/AI
 ```
-If you make an entry as a suboption:
+If you make an entry with suboption:
 ```bash
 amiget -dexy AmigetGPT.lha util/misc RAM:Downloads/AI
 ```
