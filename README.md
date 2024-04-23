@@ -3,7 +3,7 @@ A console application to search for and download packages from aminet on AmigaOS
 
 This application was coded on a real Amiga using `Amiga-E` and `C` language.
 
-An internet connection is required for this application (bsdsocket.library). 
+An internet connection is required to use this application (bsdsocket.library). 
 
 **Although it is not certain, the application may not work properly on Amiga emulators.**
 
