@@ -36,7 +36,7 @@ Or you downloaded the package but want to view the readme file:
 ```bash
 amiget -R
 ```
-The package you are looking for may not have been published in the last 30 days. What to do? For example: To search for demo packs for parties from 1992, enter this:
+The package you are looking for may not have been published in the last 30 days. What to do? For example: To search for demo packages for parties from 1992, enter this:
 ```bash
 amiget -s demo party 92
 ```
