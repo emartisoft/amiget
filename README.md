@@ -40,6 +40,24 @@ The package you are looking for may not have been published in the last 30 days.
 ```bash
 amiget -s demo party 92
 ```
+If you want to sort the table by column names:
+```bash
+-sn : name
+-sp : path
+-sd : date
+-ss : size
+```
+```bash
+amiget -sd demo party 92
+```
+Also if you want to sort in ascending or descending order:
+```bash
+-s?a : ascending
+-s?z : descending
+```
+```bash
+amiget -sdz demo party 92
+```
 You can also download the package you want to download without searching. For example, to download the package `/util/misc/AmigaGPT.lha` and save it in the `RAM:Downloads/AI` drawer:
 ```bash
 amiget -d AmigetGPT.lha util/misc RAM:Downloads/AI
