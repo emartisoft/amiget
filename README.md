@@ -78,7 +78,7 @@ for suboption details:
 ```bash
 amiget -h
 ```
-Enter the following command to create an `amiget.cfg` config file in the `SYS:Prefs/Env-Archive` drawer:
+Enter the following command to create an `amiget.cfg` config file in the titled `SYS:Prefs/Env-Archive` drawer:
 ```bash
 amiget -c
 ```
