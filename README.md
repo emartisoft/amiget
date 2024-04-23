@@ -47,7 +47,7 @@ If you want to sort the table by column names:
 -sd : date
 -ss : size
 ```
-To sort date:
+To sort by date:
 ```bash
 amiget -sd demo party 92
 ```
@@ -56,7 +56,7 @@ Also if you want to sort in ascending or descending order:
 -s?a : ascending
 -s?z : descending
 ```
-To sort date in descending order
+To sort in descending order by date
 ```bash
 amiget -sdz demo party 92
 ```
