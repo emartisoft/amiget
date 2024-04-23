@@ -30,7 +30,7 @@ Let's say you only viewed the readme file but then you want to download it. Then
 ```bash
 amiget -D
 ```
-You can also use this command to download the same package again. You can also use it to resume the download if you interrupted it with `CTRL-C`.
+You can also use this command to download the same package again. You can also use it to resume to download if you interrupted it with `CTRL-C`.
 
 Or you downloaded the package but want to view the readme file:
 ```bash
