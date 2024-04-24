@@ -111,3 +111,4 @@ Compile installer with the following command:
 evo copy2c.e
 evo install.e
 ```
+![installer](https://github.com/emartisoft/amiget/blob/main/screenshots/installer.png?raw=true)
