@@ -1,4 +1,4 @@
-# amiget
+# What's amiget?
 A console application to search for and download packages from aminet on AmigaOS 3.X
 
 This application was coded on a real Amiga using `Amiga-E` and `C` language.
