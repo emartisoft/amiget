@@ -7,6 +7,8 @@ An internet connection is required to use this application (bsdsocket.library).
 
 **Although it is not certain, the application may not work properly on Amiga emulators.**
 
+![operation](https://github.com/emartisoft/amiget/blob/main/screenshots/operation.png?raw=true)
+
 # How to use
 Let me try to explain how to use it by giving an example. 
 
