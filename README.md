@@ -96,9 +96,9 @@ Compile amiget with the following command:
 ```bash
 evo amiget.e
 ```
-More Info for E-VO Amiga E Compiler: https://github.com/dmcoles/EVO
+More Info for `E-VO Amiga E Compiler`: https://github.com/dmcoles/EVO
 ## amisearch
-To compile with SAS/C:
+To compile with `SAS/C`:
 - Copy all header files from the include drawer to the `sc:include` assignment.
 - Copy all lib files from the lib drawer to the `sc:lib` assignment.
 - To compile amisearch:
