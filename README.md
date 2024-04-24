@@ -6,6 +6,7 @@ This application was coded on a real Amiga using `Amiga-E` and `C` language.
 An internet connection is required to use this application (bsdsocket.library). 
 
 **Although it is not certain, the application may not work properly on Amiga emulators.**
+`lha`, `untgz` and `unzip` must be installed on your system optionally.
 
 ![operation](https://github.com/emartisoft/amiget/blob/main/screenshots/operation.png?raw=true)
 
