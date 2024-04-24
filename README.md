@@ -1,4 +1,4 @@
-# What's ![amiget](https://github.com/emartisoft/amiget/blob/main/screenshots/amiget.png?raw=true) amiget? 
+# What it is ![amiget](https://github.com/emartisoft/amiget/blob/main/screenshots/amiget.png?raw=true) 
 A console application to search for and download packages from aminet on AmigaOS 3.X
 
 This application was coded on a real Amiga using `Amiga-E` and `C` language.
