@@ -110,7 +110,7 @@ To compile with `SAS/C`:
 execute amisearch.c
 ```
 ## installer
-To compile installer with the following command:
+To compile installer with the following commands:
 ```bash
 evo copy2c.e
 evo install.e
