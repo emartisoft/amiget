@@ -90,7 +90,7 @@ After this command, a config file is created and the titled `SYS:Prefs/Env-Archi
 ## amiget
 Copy all module files in the Module drawer to the `EModules:` assignment.
 ```bash
-copy \#?.m to EModules:
+copy #?.m to EModules:
 ```
 Compile amiget with the following command:
 ```bash
