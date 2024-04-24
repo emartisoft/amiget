@@ -86,6 +86,8 @@ amiget -c
 ```
 After this command, a config file is created and the titled `SYS:Prefs/Env-Archive` window opens. To edit the file, open it with a text editor. The necessary explanations are described in the config file.
 
+![help](https://github.com/emartisoft/amiget/blob/main/screenshots/help.png?raw=true)
+
 # How to compile
 ## amiget
 Copy all module files in the Module drawer to the `EModules:` assignment.
