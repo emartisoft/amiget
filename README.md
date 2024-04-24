@@ -85,3 +85,29 @@ Enter the following command to create an `amiget.cfg` config file in the `SYS:Pr
 amiget -c
 ```
 After this command, a config file is created and the titled `SYS:Prefs/Env-Archive` window opens. To edit the file, open it with a text editor. The necessary explanations are described in the config file.
+
+# How to compile
+## amiget
+Copy all module files in the Module drawer to the `EModules:` assignment.
+```bash
+copy \#?.m to EModules:
+```
+Compile amiget with the following command:
+```bash
+evo amiget.e
+```
+More Info for E-VO Amiga E Compiler: https://github.com/dmcoles/EVO
+## amisearch
+To compile with SAS/C:
+- Copy all header files from the include drawer to the `sc:include` assignment.
+- Copy all lib files from the lib drawer to the `sc:lib` assignment.
+- To compile amisearch:
+```bash
+execute amisearch.c
+```
+## installer
+Compile installer with the following command:
+```bash
+evo copy2c.e
+evo install.e
+```
