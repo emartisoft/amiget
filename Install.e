@@ -19,7 +19,7 @@ MODULE 'window','classes/window',
       'reaction/reaction_macros',
       'reaction/reaction_lib'
       
-#define VERSION 'Amiget Installer v1.0 (29.03.2024)'
+#define VERSION 'Amiget Installer v1.1 (29.04.2024)'
 
 ->InstallWindow gadgets
 ENUM LAYOUT_5, SPACE_6, LAYOUT_8, SPACE_9, BITMAP_11, BITMAP_12, BITMAP_13, 
@@ -212,7 +212,7 @@ PROC installwindow() HANDLE
           LAYOUT_ADDIMAGE, mainGadgets[LABEL_21]:=LabelObject,
             GA_ID, LABEL_21,
             LABEL_DRAWINFO, gDrawInfo,
-            LABEL_TEXT, 'Amiget V1.0 (29.03.2024)',
+            LABEL_TEXT, VERSION,
             LABEL_JUSTIFICATION, LJ_CENTER,
           LabelEnd,
         LayoutEnd,

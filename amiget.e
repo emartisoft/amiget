@@ -1,5 +1,5 @@
 ->-------------------------------------------<-
--> Amiget v1.0 (29/03/2024)
+-> Amiget v1.1 (29/04/2024)
 -> Coded by emarti, Murat Ozdemir 
 ->-------------------------------------------<-
 
@@ -7,7 +7,7 @@ OPT OSVERSION=37
 OPT PREPROCESS
 OPT LARGE
 
-#define VERSION 'Amiget v1.0 (29.03.2024)'
+#define VERSION 'Amiget v1.1 (29.04.2024)'
 
 MODULE  'ftpaminet',
         'dos/dos',
@@ -132,17 +132,11 @@ PROC main()
                 WriteF('\e[1;31;40m\aamisearch\a not found.\e[0;31;40m Try reinstalling \aAmiget\a to fix the problem\n')
                 JUMP end2
             ENDIF
-            MidStr(searchwords, arg, 3, ALL)
-            StrCopy(searchwords, TrimStr(searchwords))
-            IF StrLen(searchwords)<2
-                WriteF('Insufficient length for search\n')
-                JUMP end2
-            ENDIF  
             
             -> sort and order
             StrCopy(sort, 'n')
             StrCopy(ord, 'a')
-            
+            paramIndex:=2
             REPEAT
                 -> sort by name
                 IF (paramStr[paramIndex]="n") THEN StrCopy(sort, 'n')
@@ -158,6 +152,13 @@ PROC main()
                 IF (paramStr[paramIndex]="z") THEN StrCopy(ord, 'z')
                 paramIndex++
             UNTIL paramIndex > StrLen(paramStr)
+            
+            MidStr(searchwords, arg, paramIndex, ALL)
+            StrCopy(searchwords, TrimStr(searchwords))
+            IF StrLen(searchwords)<2
+                WriteF('Insufficient length for search\n')
+                JUMP end2
+            ENDIF  
 
             StringF(searchwords, 'amisearch \s\s \s', sort, ord, searchwords);
             prerunamisearch:

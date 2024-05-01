@@ -4,7 +4,7 @@ delete #?.o #?.lnk
 quit
 */
 /*
-    Amisearch v1.0 (29.03.2024)
+    Amisearch v1.1 (29.04.2024)
     Coded by emarti, Murat Ozdemir
 */
 
@@ -30,7 +30,7 @@ quit
 #define DARK        "darkrow"
 
 #define BUFFER      0x0400
-UBYTE *vers = "\0$VER: amisearch 1.0 (29.03.2024) emarti, Murat Ozdemir\r\n\0";
+UBYTE *vers = "\0$VER: amisearch 1.1 (29.04.2024) emarti, Murat Ozdemir\r\n\0";
 
 BPTR file, htmlfile;
 char **arrline;
@@ -62,8 +62,6 @@ int main(int argc, char* argv[]) {
     time_t t;
     struct tm *dt;
     char strdate[0xff];
-    char opt[3];
-    
     
     signal(SIGINT, INThandler);
     
@@ -86,8 +84,7 @@ int main(int argc, char* argv[]) {
             if (i!=argc-1) strcat(url, "+");
         }
         //strcat(url, "&start=0");
-        strcpy(opt, argv[1]);
-        switch (opt[0])
+        switch (argv[1][0])
         {
             case 'n': strcat(url, "&sort=name");break;
             case 'p': strcat(url, "&sort=path");break;
@@ -96,7 +93,7 @@ int main(int argc, char* argv[]) {
             default: break;
         }
         
-        switch (opt[1])
+        switch (argv[1][1])
         {
             case 'a': strcat(url, "&ord=no");break;
             case 'z': strcat(url, "&ord=DESC");break;
@@ -124,7 +121,8 @@ int main(int argc, char* argv[]) {
     // html->data
     htmlfile = Open(htmlfilename, MODE_OLDFILE);
     if (htmlfile == NULL) {
-        printf("HTML file not found\n");
+        printf("HTML file not found.\n"); // If not HTTP, html file not download
+        printf("Aminet server protocol may have been changed to HTTPS. Please, try again later.\n");
         return -2;
     }
     
