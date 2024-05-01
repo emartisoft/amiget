@@ -9,7 +9,7 @@ An internet connection is required to use this application (bsdsocket.library).
 
 `lha`, `untgz` and `unzip` must be installed on your system optionally.
 
-![operation](https://github.com/emartisoft/amiget/blob/main/screenshots/operation.png?raw=true)
+![operation1](https://github.com/emartisoft/amiget/blob/main/screenshots/operation1.gif?raw=true)
 
 # How to use
 Let me try to explain how to use it by giving an example. 
